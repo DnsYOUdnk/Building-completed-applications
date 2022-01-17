@@ -275,3 +275,32 @@ body {
     gap: 20px 25px;
     justify-content: center;
 }
+
+.video__wrapper .section__title-wrapper {
+    padding: 94px 0 61px;
+}
+
+.video-player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 705px;
+}
+
+.video-player__element {
+    width: 100%;
+}
+
+.video__btn {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.video__btn:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
+}
