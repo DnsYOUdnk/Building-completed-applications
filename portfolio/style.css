@@ -241,3 +241,37 @@ body {
     font-size: 18px;
     line-height: 36px;
 }
+
+.portfolio__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.portfolio__btn {
+    border: 2px solid #BDAE82;
+    color: #BDAE82;
+}
+
+.portfolio__btn:not(:last-child) {
+    margin-right: 5px;
+}
+
+.portfolio__btn:last-child {
+    background-color: #BDAE82;
+    color: #000;
+}
+
+.portfolio__btn:hover,
+.price__btn:hover,
+.contacts__btn:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+
+.portfolio__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+    justify-content: center;
+}
