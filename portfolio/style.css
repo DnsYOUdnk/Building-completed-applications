@@ -211,3 +211,33 @@ body {
     color: #fff;
     transition: 0.3s;
 }
+
+.skills__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.skills__item {
+    padding-bottom: 9px;
+    max-width: 320px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills__item-title {
+    padding-bottom: 22px;
+    font-family: 'Inter Bold';
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.skills__item-text {
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 36px;
+}
