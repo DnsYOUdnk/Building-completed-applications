@@ -109,3 +109,72 @@ body {
 .section__title::after {
     margin-left: 20px;
 }
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url(./assets/svg/header__logo.svg) center 2px no-repeat;
+    transition: 0.8s;
+}
+
+.header__icon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.8s;
+}
+
+.nav__items,
+.languages__items {
+    list-style: none;
+    display: flex;
+}
+
+.nav__link,
+.lang__link {
+    line-height: 50px;
+}
+
+.header__nav {
+    padding: 20px 31px;
+    margin-left: auto;
+}
+
+.nav__item:not(:last-child) {
+    padding-right: 31px;
+}
+
+.nav__link:hover {
+    color: #BDAE82;
+    transition: 0.8s;
+}
+
+.lang__link {
+    font-family: 'Inter Bold';
+}
+
+.languages__item:nth-child(1) a{
+    color: #BDAE82;
+}
+
+.languages__item:nth-child(1) a:hover{
+    color: #6e5b20;
+}
+
+.languages__item:nth-child(2) a:hover{
+    color: #BDAE82;
+    transition: 0.8s;
+}
+
+.languages__item:nth-child(1)::after {
+    content: '/';
+    line-height: 50px;
+    padding: 0 8px 0 9px;
+    font-family: 'Inter Bold';
+}
