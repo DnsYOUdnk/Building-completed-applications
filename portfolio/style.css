@@ -3,3 +3,478 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url(./assets/fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Merriweather Bold';
+    src: url(./assets/fonts/Merriweather-Bold.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+
+.app__portfolio {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: #fff;
+}
+
+.header {
+    background: url(./assets/img/header__background.png) center 0 no-repeat;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.link_all {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.8s;
+}
+
+.btn__all {
+    width: 220px;
+    height: 55px;
+    background: transparent;
+    border: none;
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;    
+    transition: 0.3s;
+}
+
+.section__title-wrapper {
+    margin: 0 auto;
+    padding: 99px 0 61px;
+    max-width: 700px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.section__title {
+    position: relative;
+    display: inline-block;
+    font-family: 'Merriweather Bold';
+    font-size: 40px;
+    line-height: 80px;
+    color: #BDAE82;
+}
+
+.section__title::before,
+.section__title::after  {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 500px;
+    border-bottom: 2px solid #BDAE82;
+}
+
+.section__title::before {
+    margin-right: 20px;
+    right: 100%;
+}
+
+.section__title::after {
+    margin-left: 20px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url(./assets/svg/header__logo.svg) center 2px no-repeat;
+    transition: 0.8s;
+}
+
+.header__icon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.8s;
+}
+
+.nav__items,
+.languages__items {
+    list-style: none;
+    display: flex;
+}
+
+.nav__link,
+.lang__link {
+    line-height: 50px;
+}
+
+.header__nav {
+    padding: 20px 31px;
+    margin-left: auto;
+}
+
+.nav__item:not(:last-child) {
+    padding-right: 31px;
+}
+
+.nav__link:hover {
+    color: #BDAE82;
+    transition: 0.8s;
+}
+
+.lang__link {
+    font-family: 'Inter Bold';
+}
+
+.languages__item:nth-child(1) a{
+    color: #BDAE82;
+}
+
+.languages__item:nth-child(1) a:hover{
+    color: #6e5b20;
+}
+
+.languages__item:nth-child(2) a:hover{
+    color: #BDAE82;
+    transition: 0.8s;
+}
+
+.languages__item:nth-child(1)::after {
+    content: '/';
+    line-height: 50px;
+    padding: 0 8px 0 9px;
+    font-family: 'Inter Bold';
+}
+
+.hero {
+    height: 820px;
+    background: url(./assets/img/header__background.png) center -90px no-repeat;
+}
+
+.hero__content {
+    max-width: 500px;
+    padding-top: 160px;
+    margin-left: 60px;
+}
+
+.hero__title {
+    margin-bottom: 10px;
+    font-family: 'Merriweather Bold';
+    font-size: 60px;
+    line-height: 120px;
+}
+
+.hero__description {
+    max-width: 470px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.hero__btn {
+    background-color: #BDAE82;
+}
+
+.hero__btn:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.skills__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.skills__item {
+    padding-bottom: 9px;
+    max-width: 320px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills__item-title {
+    padding-bottom: 22px;
+    font-family: 'Inter Bold';
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.skills__item-text {
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.portfolio__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.portfolio__btn {
+    border: 2px solid #BDAE82;
+    color: #BDAE82;
+}
+
+.portfolio__btn:not(:last-child) {
+    margin-right: 5px;
+}
+
+.portfolio__btn:last-child {
+    background-color: #BDAE82;
+    color: #000;
+}
+
+.portfolio__btn:hover,
+.price__btn:hover,
+.contacts__btn:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+
+.portfolio__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+    justify-content: center;
+}
+
+.video__wrapper .section__title-wrapper {
+    padding: 94px 0 61px;
+}
+
+.video-player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 705px;
+}
+
+.video-player__element {
+    width: 100%;
+}
+
+.video__btn {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.video__btn:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
+}
+
+.price__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.price__item {
+    width: 450px;
+    height: 505px;
+    border: 3px solid #BDAE82;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price__item-title {
+    font-family: 'Merriweather Bold';
+    font-size: 28px;
+    line-height: 56px;
+    padding-bottom: 20px;
+}
+
+.price__value {
+    font-family: 'Merriweather Bold';
+    font-size: 24px;
+    line-height: 48px;
+    color: #BDAE82;
+    padding-bottom: 20px;
+}
+
+.price__description span{
+    display: block;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.price__btn {
+    margin-top: 40px;
+    background: #BDAE82;
+}
+
+.contacts {
+    height: 700px;
+    background: url(./assets/img/sec-contacts__background.jpg) center 0 no-repeat;
+}
+
+.contacts__wrapper {
+    padding-top: 60px;
+    max-width: 450px;
+    margin-left: auto;
+}
+
+.contacts__title {
+    font-family: 'Merriweather Bold';
+    font-size: 40px;
+    line-height: 80px;
+    color: #BDAE82;
+    margin-bottom: 40px;
+}
+
+.contacts__input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contacts__input input,
+.contacts__input textarea {
+    padding: 3px 18px;
+    border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 40px;
+    color: #BDAE82;
+}
+
+.contacts__input textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contacts__input input::placeholder,
+.contacts__input textarea::placeholder {
+    color: #BDAE82;
+}
+
+.contacts__btn {
+    background-color: #BDAE82;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright,
+.footer__school_name {
+    padding: 50px 0;
+}
+
+.footer__copyright {
+    flex: 1 0 auto;
+}
+
+.footer__copyright span {
+    padding: 0 21px;
+}
+
+.footer__school_name {
+    flex: 4 0 auto;
+    text-align: center;
+}
+
+.footer__link {
+    line-height: 50px;
+}
+
+.footer__link:hover {
+    color: #BDAE82;
+}
+
+.footer__social {
+    flex: 2 0 auto;
+}
+
+.footer__social-items {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding-top: 5px;
+}
+
+.footer__social-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer__ico {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.footer__ico:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
+}
+
+.ico__inst {
+    background: url(./assets/svg/sec-footer__inst.svg)center no-repeat;
+}
+
+.ico__fb {
+    background: url(./assets/svg/sec-footer__fb.svg)center no-repeat;
+}
+
+.ico__twt {
+    background: url(./assets/svg/sec-footer__tw.svg)center no-repeat;
+}
+
+.ico__pnt {
+    background: url(./assets/svg/sec-footer__pntrst.svg)center no-repeat;
+}
+
