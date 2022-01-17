@@ -178,3 +178,36 @@ body {
     padding: 0 8px 0 9px;
     font-family: 'Inter Bold';
 }
+
+.hero {
+    height: 820px;
+    background: url(./assets/img/header__background.png) center -90px no-repeat;
+}
+
+.hero__content {
+    max-width: 500px;
+    padding-top: 160px;
+    margin-left: 60px;
+}
+
+.hero__title {
+    margin-bottom: 10px;
+    font-family: 'Merriweather Bold';
+    font-size: 60px;
+    line-height: 120px;
+}
+
+.hero__description {
+    max-width: 470px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.hero__btn {
+    background-color: #BDAE82;
+}
+
+.hero__btn:hover {
+    color: #fff;
+    transition: 0.3s;
+}
