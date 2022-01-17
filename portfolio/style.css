@@ -304,3 +304,49 @@ body {
     contrast(87%);
     transition: 0.3s;
 }
+
+.price__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.price__item {
+    width: 450px;
+    height: 505px;
+    border: 3px solid #BDAE82;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price__item-title {
+    font-family: 'Merriweather Bold';
+    font-size: 28px;
+    line-height: 56px;
+    padding-bottom: 20px;
+}
+
+.price__value {
+    font-family: 'Merriweather Bold';
+    font-size: 24px;
+    line-height: 48px;
+    color: #BDAE82;
+    padding-bottom: 20px;
+}
+
+.price__description span{
+    display: block;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.price__btn {
+    margin-top: 40px;
+    background: #BDAE82;
+}
+
