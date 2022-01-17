@@ -193,6 +193,19 @@
                 </div>
             </section>
             <section class="contacts" id="contacts">
+                <div class="container">
+                    <div class="contacts__wrapper">
+                        <h2 class="contacts__title">Contact me</h2>
+                        <div class="contacts__input">
+                            <input type="email" placeholder="E-mail" required minlength="5" maxlength="30" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+                            <input type="tel" placeholder="Phone" required minlength="6" maxlength="14" name="phone">
+                            <textarea name="comment" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="contacts__button">
+                            <button class="contacts__btn btn__all">Send message</button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer"></footer>

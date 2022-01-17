@@ -350,3 +350,55 @@ body {
     background: #BDAE82;
 }
 
+.contacts {
+    height: 700px;
+    background: url(./assets/img/sec-contacts__background.jpg) center 0 no-repeat;
+}
+
+.contacts__wrapper {
+    padding-top: 60px;
+    max-width: 450px;
+    margin-left: auto;
+}
+
+.contacts__title {
+    font-family: 'Merriweather Bold';
+    font-size: 40px;
+    line-height: 80px;
+    color: #BDAE82;
+    margin-bottom: 40px;
+}
+
+.contacts__input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contacts__input input,
+.contacts__input textarea {
+    padding: 3px 18px;
+    border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 40px;
+    color: #BDAE82;
+}
+
+.contacts__input textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contacts__input input::placeholder,
+.contacts__input textarea::placeholder {
+    color: #BDAE82;
+}
+
+.contacts__btn {
+    background-color: #BDAE82;
+}
+
