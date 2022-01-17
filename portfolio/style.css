@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url(./assets/fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Merriweather Bold';
+    src: url(./assets/fonts/Merriweather-Bold.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #000;
+    scroll-behavior: smooth;
+}
