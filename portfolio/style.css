@@ -37,7 +37,7 @@ body {
 }
 
 .header {
-    background: url(./assets/img/header__background.png) center 0 no-repeat;
+    background: url(./assets/img/header__background.jpg) center 0 no-repeat;
 }
 
 .header,
@@ -181,7 +181,7 @@ body {
 
 .hero {
     height: 820px;
-    background: url(./assets/img/header__background.png) center -90px no-repeat;
+    background: url(./assets/img/header__background.jpg) center -90px no-repeat;
 }
 
 .hero__content {
