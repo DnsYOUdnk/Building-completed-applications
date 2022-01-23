@@ -74,7 +74,47 @@
     }
 
     .video__wrapper .section__title-wrapper {
-        padding: 74px 0 50px;
+        padding: 74px 0 51px;
     }
 
+    .video-player {
+        background: url(./assets/img/sec-video-player__img768.jpg) no-repeat;
+        height: 418px;
+        margin: 0 -60px;
+    }
+
+    .video__btn img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .price__items {
+        gap: 50px;
+        margin-bottom: 80px;
+    }
+    
+    .price__item {
+        width: 420px;
+    }
+
+    .contacts {
+        height: 600px;
+        background: url(./assets/img/sec-contacts__background.jpg) center 0 no-repeat;
+        background-size: auto 600px;
+    }
+
+    .contacts__wrapper {
+        margin: 0 auto;
+    }
+
+    .contacts__title {
+        font-size: 32px;
+        line-height: 64px;
+        text-align: center;
+    }
+
+    .contacts__button {
+        display: flex;
+        justify-content: center;
+    }
 }
