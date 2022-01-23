@@ -411,17 +411,12 @@ body {
     align-items: center;
 }
 
-.footer__copyright {
-    flex: 1 0 auto;
-}
-
 .footer__copyright span {
     padding: 0 21px;
 }
 
 .footer__school_name {
-    flex: 4 0 auto;
-    text-align: center;
+    padding-left: 17px;
 }
 
 .footer__link {
@@ -430,10 +425,6 @@ body {
 
 .footer__link:hover {
     color: #BDAE82;
-}
-
-.footer__social {
-    flex: 2 0 auto;
 }
 
 .footer__social-items {
