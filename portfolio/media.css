@@ -1,3 +1,80 @@
 @media screen and (max-width: 768px) {
-    
+    .container {
+        padding: 0 60px 0 60px;
+    }
+
+    .header {
+        height: 90px;
+        background: url(./assets/img/header__background.jpg) -5px -30px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .hero {
+        height: 500px;
+        background: url(./assets/img/header__background.jpg) -5px -120px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .hero__content {
+        padding-top: 78px;
+        margin-left: 0px;
+    }
+
+    .hero__title {
+        margin-bottom: 20px;
+        font-family: 'Merriweather Regular';
+        font-size: 32px;
+        font-weight: normal;
+        line-height: 64px;
+    }
+
+    .hero__description {
+        max-width: 390px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+
+    .section__title-wrapper {
+        padding: 80px 0 50px;
+        max-width: 364px;
+    }
+
+    .section__title {
+        font-size: 32px;
+    }
+
+    .skills__wrapper .section__title-wrapper {
+        padding: 80px 0 45px;
+    }
+
+    .skills__content {
+        gap: 36px 44px;
+        padding-bottom: 40px;
+    }
+
+    .skills__item {
+        padding-bottom: 0px;
+        max-width: 302px;
+        height: 224px;
+        justify-content: start;
+    }
+
+    .skills__img {
+        padding-bottom: 26px;
+    }
+
+    .skills__item-title {
+        padding-bottom: 20px;
+        line-height: 40px;
+    }
+
+    .skills__item-text {
+        padding: 0 10px;
+        line-height: 22px;
+    }
+
+    .video__wrapper .section__title-wrapper {
+        padding: 74px 0 50px;
+    }
+
 }

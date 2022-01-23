@@ -19,6 +19,11 @@
     src: url(./assets/fonts/Merriweather-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Merriweather Regular';
+    src: url(./assets/fonts/Merriweather-Regular.ttf);
+}
+
 html,
 body {
     height: 100%;
