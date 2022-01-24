@@ -411,20 +411,20 @@ body {
     align-items: center;
 }
 
-.footer__copyright span {
-    padding: 0 21px;
-}
-
-.footer__school_name {
-    padding-left: 17px;
-}
-
 .footer__link {
     line-height: 50px;
 }
 
 .footer__link:hover {
     color: #BDAE82;
+}
+
+.footer__copyright span {
+    padding: 0 21px;
+}
+
+.footer__school_name {
+    padding-left: 17px;
 }
 
 .footer__social-items {

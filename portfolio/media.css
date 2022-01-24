@@ -1,15 +1,8 @@
 @media screen and (max-width: 900px) {
     .footer__wrapper {
         height: 190px;
-        display: flex;
         flex-direction: column;
         justify-content: start;
-    }
-
-    .footer__copyright,
-    .footer__school_name,
-    .footer__social {
-        flex: none;
     }
 
     .footer__link {
@@ -21,8 +14,8 @@
         padding-bottom: 16px;
     }
 
-    .footer__copyright span {
-        padding: 0 18px;
+    .footer__school_name {
+        padding-left: 0px;
     }
 
     .footer__social-items {
