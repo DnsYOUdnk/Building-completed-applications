@@ -26,7 +26,7 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        padding: 0 60px 0 60px;
+        padding: 0 60px;
     }
 
     .header {
@@ -191,5 +191,115 @@
     .contacts__button {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skills__content {
+        gap: 24px 30px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .portfolio__buttons {
+        padding: 0 20px;
+    }
+
+    .video-player {
+        margin: 0 -40px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .header {
+        background: url(./assets/img/header__background.jpg) -90px -30px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .hero {
+        background: url(./assets/img/header__background.jpg) -90px -120px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .openMenu {
+        width: 100%;
+    }
+
+    @keyframes slideOpen {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    .section__title-wrapper {
+        padding: 60px 0 30px;
+    }
+
+    .skills__content {
+        padding-bottom: 0px;
+    }
+
+    .portfolio__item img {
+        max-width: 440px;
+    }
+
+    .video__wrapper .section__title-wrapper {
+        padding: 60px 0 30px;
+    }
+
+    .contacts {
+        background: url(./assets/img/sec-contacts__background.jpg) -135px 0px no-repeat;
+        background-size: auto 600px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .header {
+        background: url(./assets/img/header__background.jpg) center -30px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .hero {
+        background: url(./assets/img/header__background.jpg) center -120px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .portfolio__item img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .nav__item {
+        padding-left: 100px;
+    }
+
+    .hero__content {
+        padding-top: 50px;
+    }
+
+    .portfolio__item img {
+        max-width: 270px;
+    }
+
+    .video-player {
+        background: url(./assets/img/sec-video-player__img768.jpg) -90px center no-repeat;
+        margin: 0 -20px;
+    }
+
+    .price__items {
+        gap: 30px;
     }
 }
