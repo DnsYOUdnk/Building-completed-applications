@@ -1,0 +1,305 @@
+@media screen and (max-width: 900px) {
+    .footer__wrapper {
+        height: 190px;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .footer__link {
+        line-height: 24px;
+    }
+
+    .footer__copyright {
+        padding-top: 28px;
+        padding-bottom: 16px;
+    }
+
+    .footer__school_name {
+        padding-left: 0px;
+    }
+
+    .footer__social-items {
+        padding-top: 29px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 60px;
+    }
+
+    .header {
+        background: url(./assets/img/header__background.jpg) -5px -30px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .nav__items {
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        width: 0px;
+        z-index: 1;
+        height: 1024px;
+        background: #000000;
+        padding-top: 134px;
+        visibility: hidden;
+        transition: visibility 1s, width 1s;
+        overflow-x: hidden;
+    }
+
+    .openMenu {
+        visibility: visible;
+        width: 620px;
+        animation: slideOpen 1s ease-out;
+    }
+
+    @keyframes slideOpen {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 620px;
+        }
+    }
+
+    .nav__item {
+        padding-left: 127px;
+    }
+
+    .nav__item:not(:last-child) {
+        padding-right: 0px;
+        padding-bottom: 16px;
+    }
+
+    .nav__link {
+        font-size: 35px;
+        line-height: 73px;
+    }
+
+    .header__btn-burger {
+        display: flex; 
+        margin-left: 30px;
+        margin-right: 4px;
+    }
+
+    .hero {
+        height: 500px;
+        background: url(./assets/img/header__background.jpg) -5px -120px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .hero__content {
+        padding-top: 78px;
+        margin-left: 0px;
+    }
+
+    .hero__title {
+        margin-bottom: 20px;
+        font-family: 'Merriweather Regular';
+        font-size: 32px;
+        font-weight: normal;
+        line-height: 64px;
+    }
+
+    .hero__description {
+        max-width: 390px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+
+    .section__title-wrapper {
+        padding: 80px 0 50px;
+        max-width: 364px;
+    }
+
+    .section__title {
+        font-size: 32px;
+    }
+
+    .skills__wrapper .section__title-wrapper {
+        padding: 80px 0 45px;
+    }
+
+    .skills__content {
+        gap: 36px 44px;
+        padding-bottom: 40px;
+    }
+
+    .skills__item {
+        padding-bottom: 0px;
+        max-width: 302px;
+        height: 224px;
+        justify-content: start;
+    }
+
+    .skills__img {
+        padding-bottom: 26px;
+    }
+
+    .skills__item-title {
+        padding-bottom: 20px;
+        line-height: 40px;
+    }
+
+    .skills__item-text {
+        padding: 0 10px;
+        line-height: 22px;
+    }
+
+    .video__wrapper .section__title-wrapper {
+        padding: 74px 0 51px;
+    }
+
+    .video-player {
+        background: url(./assets/img/sec-video-player__img768.jpg) no-repeat;
+        height: 418px;
+        margin: 0 -60px;
+    }
+
+    .video__btn img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .price__items {
+        gap: 50px;
+        margin-bottom: 80px;
+    }
+    
+    .price__item {
+        width: 420px;
+    }
+
+    .contacts {
+        height: 600px;
+        background: url(./assets/img/sec-contacts__background.jpg) center 0 no-repeat;
+        background-size: auto 600px;
+    }
+
+    .contacts__wrapper {
+        margin: 0 auto;
+    }
+
+    .contacts__title {
+        font-size: 32px;
+        line-height: 64px;
+        text-align: center;
+    }
+
+    .contacts__button {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skills__content {
+        gap: 24px 30px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .portfolio__buttons {
+        padding: 0 20px;
+    }
+
+    .video-player {
+        margin: 0 -40px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .header {
+        background: url(./assets/img/header__background.jpg) -90px -30px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .hero {
+        background: url(./assets/img/header__background.jpg) -90px -120px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .openMenu {
+        width: 100%;
+    }
+
+    @keyframes slideOpen {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    .section__title-wrapper {
+        padding: 60px 0 30px;
+    }
+
+    .skills__content {
+        padding-bottom: 0px;
+    }
+
+    .portfolio__item img {
+        max-width: 440px;
+    }
+
+    .video__wrapper .section__title-wrapper {
+        padding: 60px 0 30px;
+    }
+
+    .contacts {
+        background: url(./assets/img/sec-contacts__background.jpg) -135px 0px no-repeat;
+        background-size: auto 600px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .header {
+        background: url(./assets/img/header__background.jpg) center -30px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .hero {
+        background: url(./assets/img/header__background.jpg) center -120px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .portfolio__item img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .nav__item {
+        padding-left: 70px;
+    }
+
+    .hero__content {
+        padding-top: 50px;
+    }
+
+    .portfolio__item img {
+        max-width: 270px;
+    }
+
+    .video-player {
+        background: url(./assets/img/sec-video-player__img768.jpg) -90px center no-repeat;
+        margin: 0 -20px;
+    }
+
+    .price__items {
+        gap: 30px;
+    }
+}
