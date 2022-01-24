@@ -197,6 +197,11 @@ body {
     z-index: 2;
   }
 
+.header__btn-burger:hover .btn__line{
+    background-color: #BDAE82;
+    transition: 0.3s ease-in-out;
+}
+
   .btn__line {
     width: 100%;
     height: 3px;

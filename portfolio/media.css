@@ -35,7 +35,47 @@
     }
 
     .nav__items {
-        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        width: 0px;
+        z-index: 1;
+        height: 1024px;
+        background: #000000;
+        padding-top: 134px;
+        visibility: hidden;
+        transition: visibility 1s, width 1s;
+        overflow-x: hidden;
+    }
+
+    .openMenu {
+        visibility: visible;
+        width: 620px;
+        animation: slideOpen 1s ease-out;
+    }
+
+    @keyframes slideOpen {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 620px;
+        }
+    }
+
+    .nav__item {
+        padding-left: 127px;
+    }
+
+    .nav__item:not(:last-child) {
+        padding-right: 0px;
+        padding-bottom: 16px;
+    }
+
+    .nav__link {
+        font-size: 35px;
+        line-height: 73px;
     }
 
     .header__btn-burger {
