@@ -116,6 +116,7 @@ body {
 }
 
 .header__wrapper {
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -183,6 +184,41 @@ body {
     padding: 0 8px 0 9px;
     font-family: 'Inter Bold';
 }
+
+.header__btn-burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+  }
+
+  .btn__line {
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    margin: 3px 0;
+    z-index: 15;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header__btn-burger.open .btn__line1 {
+    width: 60px;
+    transform: rotate(-45deg) translate(-10px, 11px);
+  }
+  
+  .header__btn-burger.open .btn__line2 {
+    opacity: 0;
+  }
+  
+  .header__btn-burger.open .btn__line3 {
+    width: 60px;
+    transform: rotate(45deg) translate(-10px, -10px);
+  }
 
 .hero {
     height: 820px;
