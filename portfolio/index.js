@@ -16,3 +16,9 @@ const navLinks = document.querySelectorAll('.nav__link');
                 navMenu.classList.toggle('openMenu');
             })
         })
+
+console.log(`
+Моя самооценка по кроссчекформе для Portfolio#2 - 85 балла(ов)
+Отзыв по пунктам ТЗ:
+Все пункты выполнены полностью!
+`)
