@@ -19,6 +19,11 @@
     src: url(./assets/fonts/Merriweather-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Merriweather Regular';
+    src: url(./assets/fonts/Merriweather-Regular.ttf);
+}
+
 html,
 body {
     height: 100%;
@@ -37,7 +42,7 @@ body {
 }
 
 .header {
-    background: url(./assets/img/header__background.png) center 0 no-repeat;
+    background: url(./assets/img/header__background.jpg) center 0 no-repeat;
 }
 
 .header,
@@ -111,6 +116,7 @@ body {
 }
 
 .header__wrapper {
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,9 +185,49 @@ body {
     font-family: 'Inter Bold';
 }
 
+.header__btn-burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+  }
+
+.header__btn-burger:hover .btn__line{
+    background-color: #BDAE82;
+    transition: 0.3s ease-in-out;
+}
+
+  .btn__line {
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    margin: 3px 0;
+    z-index: 15;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header__btn-burger.open .btn__line1 {
+    width: 60px;
+    transform: rotate(-45deg) translate(-10px, 11px);
+  }
+  
+  .header__btn-burger.open .btn__line2 {
+    opacity: 0;
+  }
+  
+  .header__btn-burger.open .btn__line3 {
+    width: 60px;
+    transform: rotate(45deg) translate(-10px, -10px);
+  }
+
 .hero {
     height: 820px;
-    background: url(./assets/img/header__background.png) center -90px no-repeat;
+    background: url(./assets/img/header__background.jpg) center -90px no-repeat;
 }
 
 .hero__content {
@@ -215,7 +261,8 @@ body {
 .skills__content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
     text-align: center;
 }
 
@@ -245,16 +292,14 @@ body {
 .portfolio__buttons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
     margin-bottom: 60px;
 }
 
 .portfolio__btn {
     border: 2px solid #BDAE82;
     color: #BDAE82;
-}
-
-.portfolio__btn:not(:last-child) {
-    margin-right: 5px;
 }
 
 .portfolio__btn:last-child {
@@ -285,11 +330,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(./assets/img/sec-video-player__img.jpg) no-repeat;
     height: 705px;
-}
-
-.video-player__element {
-    width: 100%;
 }
 
 .video__btn {
@@ -403,27 +445,11 @@ body {
 }
 
 .footer__wrapper {
+    height: 150px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-
-.footer__copyright,
-.footer__school_name {
-    padding: 50px 0;
-}
-
-.footer__copyright {
-    flex: 1 0 auto;
-}
-
-.footer__copyright span {
-    padding: 0 21px;
-}
-
-.footer__school_name {
-    flex: 4 0 auto;
-    text-align: center;
 }
 
 .footer__link {
@@ -434,8 +460,12 @@ body {
     color: #BDAE82;
 }
 
-.footer__social {
-    flex: 2 0 auto;
+.footer__copyright span {
+    padding: 0 21px;
+}
+
+.footer__school_name {
+    padding-left: 17px;
 }
 
 .footer__social-items {
