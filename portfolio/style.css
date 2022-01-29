@@ -302,7 +302,7 @@ body {
     color: #BDAE82;
 }
 
-.portfolio__btn:last-child {
+.portfolio__btn.active {
     background-color: #BDAE82;
     color: #000;
 }
