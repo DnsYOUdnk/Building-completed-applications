@@ -165,15 +165,11 @@ body {
     font-family: 'Inter Bold';
 }
 
-.languages__item:nth-child(1) a{
+.languages__item.on__lang a{
     color: #BDAE82;
 }
 
-.languages__item:nth-child(1) a:hover{
-    color: #6e5b20;
-}
-
-.languages__item:nth-child(2) a:hover{
+.languages__item a:hover{
     color: #BDAE82;
     transition: 0.8s;
 }

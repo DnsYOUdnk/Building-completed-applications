@@ -23,17 +23,17 @@
                     </div>
                     <nav class="header__nav">
                         <ul class="nav__items">
-                            <li class="nav__item"><a href="#skills" class="link_all nav__link">Skills</a></li>
-                            <li class="nav__item"><a href="#portfolio" class="link_all nav__link">Portfolio</a></li>
-                            <li class="nav__item"><a href="#video" class="link_all nav__link">Video</a></li>
-                            <li class="nav__item"><a href="#price" class="link_all nav__link">Price</a></li>
-                            <li class="nav__item"><a href="#contacts" class="link_all nav__link">Contacts</a></li>
+                            <li class="nav__item"><a href="#skills" class="link_all nav__link" data-i18 = "skills">Skills</a></li>
+                            <li class="nav__item"><a href="#portfolio" class="link_all nav__link" data-i18 = "portfolio">Portfolio</a></li>
+                            <li class="nav__item"><a href="#video" class="link_all nav__link" data-i18 = "video">Video</a></li>
+                            <li class="nav__item"><a href="#price" class="link_all nav__link" data-i18 = "price">Price</a></li>
+                            <li class="nav__item"><a href="#contacts" class="link_all nav__link" data-i18 = "contacts">Contacts</a></li>
                         </ul>
                     </nav>
                     <div class="header__language">
                         <ul class="languages__items">
-                            <li class="languages__item"><a href="#" class="link_all lang__link">en</a></li>
-                            <li class="languages__item"><a href="#" class="link_all lang__link">ru</a></li>
+                            <li class="languages__item on__lang"><a href="#en" class="link_all lang__link eng__btn">en</a></li>
+                            <li class="languages__item"><a href="#ru" class="link_all lang__link rus__btn">ru</a></li>
                         </ul>
                     </div>
                     <div class="header__btn-burger">
@@ -49,9 +49,9 @@
                 <div class="container">
                     <div class="hero__wrapper">
                         <div class="hero__content">
-                            <h1 class="hero__title">Alexa Rise</h1>
-                            <p class="hero__description">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
-                            <button class="hero__btn btn__all">Hire me</button>
+                            <h1 class="hero__title" data-i18 = "hero-title">Alexa Rise</h1>
+                            <p class="hero__description" data-i18 = "hero-text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
+                            <button class="hero__btn btn__all" data-i18 = "hire">Hire me</button>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                 <div class="container">
                     <div class="skills__wrapper">
                         <div class="section__title-wrapper">
-                            <h2 class="section__title" id="skills">Skills</h2>
+                            <h2 class="section__title" id="skills" data-i18 = "skills">Skills</h2>
                         </div>
                         <div class="skills__content">
                             <div class="skills__item">
@@ -68,8 +68,8 @@
                                     <img src="./assets/svg/sec-skills__camera.svg" alt="camera">
                                 </div>
                                 <div class="skill__description">
-                                    <div class="skills__item-title">Digital photography</div>
-                                    <p class="skills__item-text">High-quality photos in the studio and on the nature</p>
+                                    <div class="skills__item-title" data-i18 = "skill-title-1">Digital photography</div>
+                                    <p class="skills__item-text" data-i18 = "skill-text-1">High-quality photos in the studio and on the nature</p>
                                 </div>
                             </div>
                             <div class="skills__item">
@@ -77,8 +77,8 @@
                                     <img src="./assets/svg/sec-skills__video.svg" alt="video">
                                 </div>
                                 <div class="skill__description">
-                                    <div class="skills__item-title">Video shooting</div>
-                                    <p class="skills__item-text">Capture your moments so that they always stay with you</p>
+                                    <div class="skills__item-title" data-i18 = "skill-title-2">Video shooting</div>
+                                    <p class="skills__item-text" data-i18 = "skill-text-2">Capture your moments so that they always stay with you</p>
                                 </div>
                             </div>
                             <div class="skills__item">
@@ -86,8 +86,8 @@
                                     <img src="./assets/svg/sec-skills__picture.svg" alt="picture">
                                 </div>
                                 <div class="skill__description">
-                                    <div class="skills__item-title">Retouch</div>
-                                    <p class="skills__item-text">I strive to make photography surpass reality</p>
+                                    <div class="skills__item-title" data-i18 = "skill-title-3">Retouch</div>
+                                    <p class="skills__item-text" data-i18 = "skill-text-3">I strive to make photography surpass reality</p>
                                 </div>
                             </div>
                             <div class="skills__item">
@@ -95,8 +95,8 @@
                                     <img src="./assets/svg/sec-skills__micro.svg" alt="microphone">
                                 </div>
                                 <div class="skill__description">
-                                    <div class="skills__item-title">Audio</div>
-                                    <p class="skills__item-text">Professional sounds recording for video, advertising, portfolio</p>
+                                    <div class="skills__item-title" data-i18 = "skill-title-4">Audio</div>
+                                    <p class="skills__item-text" data-i18 = "skill-text-4">Professional sounds recording for video, advertising, portfolio</p>
                                 </div>
                             </div>
                         </div>
@@ -107,13 +107,13 @@
                 <div class="container">
                     <div class="portfolio__wrapper">
                         <div class="section__title-wrapper">
-                            <h2 class="section__title" id="portfolio">Portfolio</h2>
+                            <h2 class="section__title" id="portfolio" data-i18 = "portfolio">Portfolio</h2>
                         </div>
                         <div class="portfolio__buttons">
-                            <button class="portfolio__btn btn__all" data-period = "winter">Winter</button>
-                            <button class="portfolio__btn btn__all" data-period = "spring">Spring</button>
-                            <button class="portfolio__btn btn__all" data-period = "summer">Summer</button>
-                            <button class="portfolio__btn btn__all active" data-period = "autumn">Autumn</button>
+                            <button class="portfolio__btn btn__all" data-i18 = "winter">Winter</button>
+                            <button class="portfolio__btn btn__all" data-i18 = "spring">Spring</button>
+                            <button class="portfolio__btn btn__all" data-i18 = "summer">Summer</button>
+                            <button class="portfolio__btn btn__all active" data-i18 = "autumn">Autumn</button>
                         </div>
                         <div class="portfolio__content">
                             <div class="portfolio__item">
@@ -142,7 +142,7 @@
                 <div class="container">
                     <div class="video__wrapper">
                         <div class="section__title-wrapper">
-                            <h2 class="section__title" id="video">Video</h2>
+                            <h2 class="section__title" id="video" data-i18 = "video">Video</h2>
                         </div>
                         <div class="video-player">
                             <button class="video__btn"><img src="./assets/svg/sec-video-player__btn-play.svg" alt=""></button>
@@ -154,7 +154,7 @@
                 <div class="container">
                     <div class="price__wrapper">
                         <div class="section__title-wrapper">
-                            <h2 class="section__title" id="price">Price</h2>
+                            <h2 class="section__title" id="price" data-i18 = "price">Price</h2>
                         </div>
                         <div class="price__items">
                             <div class="price__item">
@@ -163,10 +163,10 @@
                                 </div>
                                 <div class="price__value">500 $</div>
                                 <div class="price__description">
-                                    <span>One location</span> <span>120 photos in color</span> <span>12 photos in retouch</span> <span>Readiness 2-3 weeks</span> <span>Make up, visage</span>
+                                    <span data-i18 = "price-description-1-span-1">One location</span> <span data-i18 = "price-description-1-span-2">120 photos in color</span> <span data-i18 = "price-description-1-span-3">12 photos in retouch</span> <span data-i18 = "price-description-1-span-4">Readiness 2-3 weeks</span> <span data-i18 = "price-description-1-span-5">Make up, visage</span>
                                 </div>
                                 <div class="price__button">
-                                    <button class="price__btn btn__all">Order shooting</button>
+                                    <button class="price__btn btn__all" data-i18 = "order">Order shooting</button>
                                 </div>
                             </div>
                             <div class="price__item">
@@ -175,10 +175,10 @@
                                 </div>
                                 <div class="price__value">700 $</div>
                                 <div class="price__description">
-                                    <span>One or two locations</span> <span>200 photos in color</span> <span>20 photos in retouch</span> <span>Readiness 1-2 weeks</span> <span>Make up, visage</span>
+                                    <span data-i18 = "price-description-2-span-1">One or two locations</span> <span data-i18 = "price-description-2-span-2">200 photos in color</span> <span data-i18 = "price-description-2-span-3">20 photos in retouch</span> <span data-i18 = "price-description-2-span-4">Readiness 1-2 weeks</span> <span data-i18 = "price-description-2-span-5">Make up, visage</span>
                                 </div>
                                 <div class="price__button">
-                                    <button class="price__btn btn__all">Order shooting</button>
+                                    <button class="price__btn btn__all" data-i18 = "order">Order shooting</button>
                                 </div>
                             </div>
                             <div class="price__item">
@@ -187,10 +187,10 @@
                                 </div>
                                 <div class="price__value">1000 $</div>
                                 <div class="price__description">
-                                    <span>Three locations or more</span> <span>300 photos in color</span> <span>50 photos in retouch</span> <span>Readiness 1 week</span> <span>Make up, visage, hairstyle</span>
+                                    <span data-i18 = "price-description-3-span-1">Three locations or more</span> <span data-i18 = "price-description-3-span-2">300 photos in color</span> <span data-i18 = "price-description-3-span-3">50 photos in retouch</span> <span data-i18 = "price-description-3-span-4">Readiness 1 week</span> <span data-i18 = "price-description-3-span-5">Make up, visage, hairstyle</span>
                                 </div>
                                 <div class="price__button">
-                                    <button class="price__btn btn__all">Order shooting</button>
+                                    <button class="price__btn btn__all" data-i18 = "order">Order shooting</button>
                                 </div>
                             </div>
                         </div>
@@ -200,14 +200,14 @@
             <section class="contacts" id="contacts">
                 <div class="container">
                     <div class="contacts__wrapper">
-                        <h2 class="contacts__title">Contact me</h2>
+                        <h2 class="contacts__title" data-i18 = "contact-me">Contact me</h2>
                         <div class="contacts__input">
-                            <input type="email" placeholder="E-mail" required minlength="5" maxlength="30" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
-                            <input type="tel" placeholder="Phone" required minlength="6" maxlength="14" name="phone">
-                            <textarea name="comment" cols="30" rows="10" placeholder="Message"></textarea>
+                            <input type="email" placeholder="E-mail" required minlength="5" maxlength="30" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" data-i18 = "email">
+                            <input type="tel" placeholder="Phone" required minlength="6" maxlength="14" name="phone" data-i18 = "phone">
+                            <textarea name="comment" cols="30" rows="10" placeholder="Message" data-i18 = "message"></textarea>
                         </div>
                         <div class="contacts__button">
-                            <button class="contacts__btn btn__all">Send message</button>
+                            <button class="contacts__btn btn__all" data-i18 = "send-message">Send message</button>
                         </div>
                     </div>
                 </div>
@@ -250,6 +250,7 @@
             </div>
         </footer>
     </div>
+    <script src="./translate.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>

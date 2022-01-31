@@ -28,11 +28,10 @@ const portfolioParentBtns = document.querySelector('.portfolio__buttons'),
       portfolioImages = document.querySelectorAll('.portfolio__image');
 
       portfolioParentBtns.addEventListener('click', (event) => {
-          console.log(event)
         if(event.target.classList.contains('portfolio__btn')) {
             portfolioBtns.forEach(item => item.classList.remove('active'))
             event.target.classList.add('active')
-            portfolioImages.forEach((img, index) => img.src =`./assets/img/${event.target.dataset.period}/${index+1}.jpg`);
+            portfolioImages.forEach((img, index) => img.src =`./assets/img/${event.target.dataset.i18}/${index+1}.jpg`);
         }
       })
 
@@ -46,4 +45,38 @@ function preloadImages(seasons) {
     })
   }
   preloadImages(seasons);
+
+const langParentLinks = document.querySelectorAll('.lang__link'),
+      langBtns = document.querySelectorAll('.languages__item'),
+      textAllList = document.querySelectorAll('[data-i18]');
+
+      langParentLinks.forEach(linkLang => {
+        linkLang.addEventListener('click', (event) => {
+            if(event.target.classList.contains('eng__btn')) {
+                console.log(event.srcElement.hash.substr(1))
+              langBtns.forEach(item => item.classList.remove('on__lang'))
+              event.path[1].classList.add('on__lang')
+              getTranslate(event.srcElement.hash.substr(1))              
+            } else if (event.target.classList.contains('rus__btn')) {
+                console.log(event.srcElement.hash.substr(1))
+              langBtns.forEach(item => item.classList.remove('on__lang'))
+              event.path[1].classList.add('on__lang');
+              getTranslate(event.srcElement.hash.substr(1))     
+        }
+      })
+    })
+
+const getTranslate = function(language) {
+    textAllList.forEach(textItem => {
+        console.log(i18Obj[language][textItem.dataset.i18])
+        if (textItem.placeholder) {
+            textItem.placeholder = i18Obj[language][textItem.dataset.i18]
+            textItem.textContent = ''
+          } 
+    })
+}
+
+
+
+console.log(i18Obj)
 
