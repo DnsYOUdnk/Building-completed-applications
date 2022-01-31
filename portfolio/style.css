@@ -27,8 +27,11 @@
 html,
 body {
     height: 100%;
-    background-color: #000;
     scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
 }
 
 .app__portfolio {
@@ -128,9 +131,11 @@ body {
     width: 50px;
     background: url(./assets/svg/header__logo.svg) center 2px no-repeat;
     transition: 0.8s;
+    
 }
 
-.header__icon:hover {
+.header__icon:hover,
+.header__btn_swith-theme:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
     transition: 0.8s;
@@ -165,15 +170,11 @@ body {
     font-family: 'Inter Bold';
 }
 
-.languages__item:nth-child(1) a{
+.languages__item.on__lang a{
     color: #BDAE82;
 }
 
-.languages__item:nth-child(1) a:hover{
-    color: #6e5b20;
-}
-
-.languages__item:nth-child(2) a:hover{
+.languages__item a:hover{
     color: #BDAE82;
     transition: 0.8s;
 }
@@ -225,6 +226,21 @@ body {
     transform: rotate(45deg) translate(-10px, -10px);
   }
 
+.header__btn_switch-theme {
+    width: 45px;
+    height: 45px;
+    background: url(./assets/svg/ico_light-theme.svg) no-repeat;
+    border: none;
+    cursor: pointer;    
+    transition: 0.3s;
+    margin-left: 35px;
+}
+
+.header__btn_switch-theme:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
 .hero {
     height: 820px;
     background: url(./assets/img/header__background.jpg) center -90px no-repeat;
@@ -269,14 +285,13 @@ body {
 .skills__item {
     padding-bottom: 9px;
     max-width: 320px;
-    height: 242px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
 .skills__item-title {
+    padding-top: 50px;
     padding-bottom: 22px;
     font-family: 'Inter Bold';
     font-size: 20px;
@@ -302,7 +317,7 @@ body {
     color: #BDAE82;
 }
 
-.portfolio__btn:last-child {
+.portfolio__btn.active {
     background-color: #BDAE82;
     color: #000;
 }

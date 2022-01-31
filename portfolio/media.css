@@ -1,4 +1,8 @@
 @media screen and (max-width: 900px) {
+    .skills__item-title {
+        padding-top: 0;
+    }
+
     .footer__wrapper {
         height: 190px;
         flex-direction: column;
