@@ -265,14 +265,13 @@ body {
 .skills__item {
     padding-bottom: 9px;
     max-width: 320px;
-    height: 242px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
 .skills__item-title {
+    padding-top: 50px;
     padding-bottom: 22px;
     font-family: 'Inter Bold';
     font-size: 20px;

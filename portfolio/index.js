@@ -50,33 +50,30 @@ const langParentLinks = document.querySelectorAll('.lang__link'),
       langBtns = document.querySelectorAll('.languages__item'),
       textAllList = document.querySelectorAll('[data-i18]');
 
-      langParentLinks.forEach(linkLang => {
+    langParentLinks.forEach(linkLang => {
         linkLang.addEventListener('click', (event) => {
             if(event.target.classList.contains('eng__btn')) {
-                console.log(event.srcElement.hash.substr(1))
-              langBtns.forEach(item => item.classList.remove('on__lang'))
-              event.path[1].classList.add('on__lang')
-              getTranslate(event.srcElement.hash.substr(1))              
+                langBtns.forEach(item => item.classList.remove('on__lang'))
+                event.path[1].classList.add('on__lang')
+                getTranslate(event.srcElement.hash.substr(1))              
             } else if (event.target.classList.contains('rus__btn')) {
-                console.log(event.srcElement.hash.substr(1))
-              langBtns.forEach(item => item.classList.remove('on__lang'))
-              event.path[1].classList.add('on__lang');
-              getTranslate(event.srcElement.hash.substr(1))     
-        }
-      })
+                langBtns.forEach(item => item.classList.remove('on__lang'))
+                event.path[1].classList.add('on__lang');
+                getTranslate(event.srcElement.hash.substr(1))     
+            }
+        })
     })
 
 const getTranslate = function(language) {
     textAllList.forEach(textItem => {
-        console.log(i18Obj[language][textItem.dataset.i18])
         if (textItem.placeholder) {
             textItem.placeholder = i18Obj[language][textItem.dataset.i18]
             textItem.textContent = ''
-          } 
+          } else {
+            textItem.textContent = i18Obj[language][textItem.dataset.i18]
+          }
     })
 }
 
 
-
-console.log(i18Obj)
 
