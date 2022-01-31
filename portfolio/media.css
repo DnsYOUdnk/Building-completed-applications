@@ -38,6 +38,11 @@
         background-size: auto 620px;
     }
 
+    .header.light-theme {
+        background: url(./assets/img/sec__hero__back_light-theme.jpg) -5px -30px no-repeat;
+        background-size: auto 620px;
+    }
+
     .nav__items {
         flex-direction: column;
         position: absolute;
@@ -45,12 +50,22 @@
         top: 0;
         width: 0px;
         z-index: 1;
-        height: 1024px;
+        height: 3024px;
         background: #000000;
         padding-top: 134px;
         visibility: hidden;
         transition: visibility 1s, width 1s;
         overflow-x: hidden;
+    }
+
+    .nav__items.light-theme {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .languages__item a.light-theme:hover, 
+    .nav__link.light-theme:hover {
+        color: #BDAE82;
     }
 
     .openMenu {
@@ -91,6 +106,12 @@
     .hero {
         height: 500px;
         background: url(./assets/img/header__background.jpg) -5px -120px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .hero.light-theme {
+        height: 500px;
+        background: url(./assets/img/sec__hero__back_light-theme.jpg) -5px -120px no-repeat;
         background-size: auto 620px;
     }
 
@@ -182,6 +203,12 @@
         background-size: auto 600px;
     }
 
+    .contacts.light-theme {
+        height: 600px;
+        background: url(./assets/img/sec__contacts__light-theme.jpg) center 0 no-repeat;
+        background-size: auto 600px;
+    }
+
     .contacts__wrapper {
         margin: 0 auto;
     }
@@ -225,8 +252,18 @@
         background-size: auto 620px;
     }
 
+    .header.light-theme {
+        background: url(./assets/img/sec__hero__back_light-theme.jpg) -90px -30px no-repeat;
+        background-size: auto 620px;
+    }
+
     .hero {
         background: url(./assets/img/header__background.jpg) -90px -120px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .hero.light-theme {
+        background: url(./assets/img/sec__hero__back_light-theme.jpg) -90px -120px no-repeat;
         background-size: auto 620px;
     }
 
@@ -263,6 +300,11 @@
         background: url(./assets/img/sec-contacts__background.jpg) -135px 0px no-repeat;
         background-size: auto 600px;
     }
+
+    .contacts.light-theme {
+        background: url(./assets/img/sec__contacts__light-theme.jpg) -135px 0px no-repeat;
+        background-size: auto 600px;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -271,8 +313,43 @@
         background-size: auto 620px;
     }
 
+    .header.light-theme {
+        background: url(./assets/img/sec__hero__back_light-theme.jpg) center -30px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .header__nav {
+        padding: 0px 0px;
+    }
+
+    .header__btn_switch-theme {
+        position: fixed;
+        right: 10px;
+        bottom: 40px;
+        z-index: 4;
+        background: url(./assets/svg/ico__change-theme.svg) center no-repeat;
+        margin-left: 0px;
+    }
+
+    .header__btn_switch-theme.light-theme {
+        background: url(./assets/svg/ico__change-theme1.svg) center no-repeat;
+        filter: grayscale(50%);
+        transform: rotate(180deg);
+        margin-left: 0px;
+    }
+
+    .header__btn_switch-theme:hover,
+    .header__btn_switch-theme.light-theme:hover {
+        filter: none;
+    }
+    
     .hero {
         background: url(./assets/img/header__background.jpg) center -120px no-repeat;
+        background-size: auto 620px;
+    }
+
+    .hero.light-theme {
+        background: url(./assets/img/sec__hero__back_light-theme.jpg) center -120px no-repeat;
         background-size: auto 620px;
     }
 
