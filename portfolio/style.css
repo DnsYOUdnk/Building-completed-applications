@@ -27,8 +27,11 @@
 html,
 body {
     height: 100%;
-    background-color: #000;
     scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
 }
 
 .app__portfolio {
@@ -128,9 +131,11 @@ body {
     width: 50px;
     background: url(./assets/svg/header__logo.svg) center 2px no-repeat;
     transition: 0.8s;
+    
 }
 
-.header__icon:hover {
+.header__icon:hover,
+.header__btn_swith-theme:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
     transition: 0.8s;
@@ -220,6 +225,21 @@ body {
     width: 60px;
     transform: rotate(45deg) translate(-10px, -10px);
   }
+
+.header__btn_switch-theme {
+    width: 45px;
+    height: 45px;
+    background: url(./assets/svg/ico_light-theme.svg) no-repeat;
+    border: none;
+    cursor: pointer;    
+    transition: 0.3s;
+    margin-left: 35px;
+}
+
+.header__btn_switch-theme:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
 
 .hero {
     height: 820px;

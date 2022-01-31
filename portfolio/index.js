@@ -46,6 +46,18 @@ function preloadImages(seasons) {
   }
   preloadImages(seasons);
 
+  
+const getTranslate = function(language) {
+    textAllList.forEach(textItem => {
+        if (textItem.placeholder) {
+            textItem.placeholder = i18Obj[language][textItem.dataset.i18]
+            textItem.textContent = ''
+          } else {
+            textItem.textContent = i18Obj[language][textItem.dataset.i18]
+          }
+    })
+}
+
 const langParentLinks = document.querySelectorAll('.lang__link'),
       langBtns = document.querySelectorAll('.languages__item'),
       textAllList = document.querySelectorAll('[data-i18]');
@@ -64,16 +76,15 @@ const langParentLinks = document.querySelectorAll('.lang__link'),
         })
     })
 
-const getTranslate = function(language) {
-    textAllList.forEach(textItem => {
-        if (textItem.placeholder) {
-            textItem.placeholder = i18Obj[language][textItem.dataset.i18]
-            textItem.textContent = ''
-          } else {
-            textItem.textContent = i18Obj[language][textItem.dataset.i18]
-          }
+
+const changeTheme = document.querySelectorAll('.change__theme'),
+      changeSwitchBtn = document.querySelector('.header__btn_switch-theme');
+    
+    changeSwitchBtn.addEventListener('click', (event) => {
+        changeTheme.forEach(editItem => {
+            editItem.classList.toggle('light-theme')
+        })
     })
-}
 
 
 

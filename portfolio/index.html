@@ -8,50 +8,54 @@
     <meta name="description" content="Portfolio task RSSchool stage-0">
     <link rel="icon" href="./assets/img/portfolio_favicon.ico">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./light-theme.css">
     <link rel="stylesheet" href="./media.css">
     <title>Portfolio</title>
 </head>
-<body>
-    <div class="app__portfolio">
-        <header class="header">
+<body class="body change__theme">
+    <div class="app__portfolio change__theme">
+        <header class="header change__theme">
             <div class="container">
                 <div class="header__wrapper">
                     <div class="header__logo">
                         <a href="./index.html" class="link_all logo__link">
-                            <span class="header__icon"></span>
+                            <span class="header__icon change__theme"></span>
                         </a>
                     </div>
                     <nav class="header__nav">
                         <ul class="nav__items">
-                            <li class="nav__item"><a href="#skills" class="link_all nav__link" data-i18 = "skills">Skills</a></li>
-                            <li class="nav__item"><a href="#portfolio" class="link_all nav__link" data-i18 = "portfolio">Portfolio</a></li>
-                            <li class="nav__item"><a href="#video" class="link_all nav__link" data-i18 = "video">Video</a></li>
-                            <li class="nav__item"><a href="#price" class="link_all nav__link" data-i18 = "price">Price</a></li>
-                            <li class="nav__item"><a href="#contacts" class="link_all nav__link" data-i18 = "contacts">Contacts</a></li>
+                            <li class="nav__item"><a href="#skills" class="link_all nav__link change__theme" data-i18 = "skills">Skills</a></li>
+                            <li class="nav__item"><a href="#portfolio" class="link_all nav__link change__theme" data-i18 = "portfolio">Portfolio</a></li>
+                            <li class="nav__item"><a href="#video" class="link_all nav__link change__theme" data-i18 = "video">Video</a></li>
+                            <li class="nav__item"><a href="#price" class="link_all nav__link change__theme" data-i18 = "price">Price</a></li>
+                            <li class="nav__item"><a href="#contacts" class="link_all nav__link change__theme" data-i18 = "contacts">Contacts</a></li>
                         </ul>
                     </nav>
                     <div class="header__language">
                         <ul class="languages__items">
-                            <li class="languages__item on__lang"><a href="#en" class="link_all lang__link eng__btn">en</a></li>
-                            <li class="languages__item"><a href="#ru" class="link_all lang__link rus__btn">ru</a></li>
+                            <li class="languages__item on__lang change__theme"><a href="#en" class="link_all lang__link eng__btn change__theme">EN</a></li>
+                            <li class="languages__item change__theme"><a href="#ru" class="link_all lang__link rus__btn change__theme">RU</a></li>
                         </ul>
                     </div>
+                    <div class="header__theme-btn">
+                        <button class="header__btn_switch-theme change__theme"></button>
+                    </div>
                     <div class="header__btn-burger">
-                        <div class="btn__line btn__line1"></div>
-                        <div class="btn__line btn__line2"></div>
-                        <div class="btn__line btn__line3"></div>
+                        <div class="btn__line btn__line1 change__theme"></div>
+                        <div class="btn__line btn__line2 change__theme"></div>
+                        <div class="btn__line btn__line3 change__theme"></div>
                     </div>
                 </div>
             </div>
         </header>
         <main class="main">
-            <section class="hero">
+            <section class="hero change__theme">
                 <div class="container">
                     <div class="hero__wrapper">
                         <div class="hero__content">
                             <h1 class="hero__title" data-i18 = "hero-title">Alexa Rise</h1>
                             <p class="hero__description" data-i18 = "hero-text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
-                            <button class="hero__btn btn__all" data-i18 = "hire">Hire me</button>
+                            <button class="hero__btn btn__all change__theme" data-i18 = "hire">Hire me</button>
                         </div>
                     </div>
                 </div>
@@ -60,7 +64,7 @@
                 <div class="container">
                     <div class="skills__wrapper">
                         <div class="section__title-wrapper">
-                            <h2 class="section__title" id="skills" data-i18 = "skills">Skills</h2>
+                            <h2 class="section__title change__theme" id="skills" data-i18 = "skills">Skills</h2>
                         </div>
                         <div class="skills__content">
                             <div class="skills__item">
@@ -107,13 +111,13 @@
                 <div class="container">
                     <div class="portfolio__wrapper">
                         <div class="section__title-wrapper">
-                            <h2 class="section__title" id="portfolio" data-i18 = "portfolio">Portfolio</h2>
+                            <h2 class="section__title change__theme" id="portfolio" data-i18 = "portfolio">Portfolio</h2>
                         </div>
                         <div class="portfolio__buttons">
-                            <button class="portfolio__btn btn__all" data-i18 = "winter">Winter</button>
-                            <button class="portfolio__btn btn__all" data-i18 = "spring">Spring</button>
-                            <button class="portfolio__btn btn__all" data-i18 = "summer">Summer</button>
-                            <button class="portfolio__btn btn__all active" data-i18 = "autumn">Autumn</button>
+                            <button class="portfolio__btn btn__all change__theme" data-i18 = "winter">Winter</button>
+                            <button class="portfolio__btn btn__all change__theme" data-i18 = "spring">Spring</button>
+                            <button class="portfolio__btn btn__all change__theme" data-i18 = "summer">Summer</button>
+                            <button class="portfolio__btn btn__all active change__theme" data-i18 = "autumn">Autumn</button>
                         </div>
                         <div class="portfolio__content">
                             <div class="portfolio__item">
@@ -142,7 +146,7 @@
                 <div class="container">
                     <div class="video__wrapper">
                         <div class="section__title-wrapper">
-                            <h2 class="section__title" id="video" data-i18 = "video">Video</h2>
+                            <h2 class="section__title change__theme" id="video" data-i18 = "video">Video</h2>
                         </div>
                         <div class="video-player">
                             <button class="video__btn"><img src="./assets/svg/sec-video-player__btn-play.svg" alt=""></button>
@@ -154,14 +158,14 @@
                 <div class="container">
                     <div class="price__wrapper">
                         <div class="section__title-wrapper">
-                            <h2 class="section__title" id="price" data-i18 = "price">Price</h2>
+                            <h2 class="section__title change__theme" id="price" data-i18 = "price">Price</h2>
                         </div>
                         <div class="price__items">
                             <div class="price__item">
                                 <div class="price__item-title">
                                     Standart
                                 </div>
-                                <div class="price__value">500 $</div>
+                                <div class="price__value change__theme">500 $</div>
                                 <div class="price__description">
                                     <span data-i18 = "price-description-1-span-1">One location</span> <span data-i18 = "price-description-1-span-2">120 photos in color</span> <span data-i18 = "price-description-1-span-3">12 photos in retouch</span> <span data-i18 = "price-description-1-span-4">Readiness 2-3 weeks</span> <span data-i18 = "price-description-1-span-5">Make up, visage</span>
                                 </div>
@@ -173,7 +177,7 @@
                                 <div class="price__item-title">
                                     Premium
                                 </div>
-                                <div class="price__value">700 $</div>
+                                <div class="price__value change__theme">700 $</div>
                                 <div class="price__description">
                                     <span data-i18 = "price-description-2-span-1">One or two locations</span> <span data-i18 = "price-description-2-span-2">200 photos in color</span> <span data-i18 = "price-description-2-span-3">20 photos in retouch</span> <span data-i18 = "price-description-2-span-4">Readiness 1-2 weeks</span> <span data-i18 = "price-description-2-span-5">Make up, visage</span>
                                 </div>
@@ -185,7 +189,7 @@
                                 <div class="price__item-title">
                                     Gold
                                 </div>
-                                <div class="price__value">1000 $</div>
+                                <div class="price__value change__theme">1000 $</div>
                                 <div class="price__description">
                                     <span data-i18 = "price-description-3-span-1">Three locations or more</span> <span data-i18 = "price-description-3-span-2">300 photos in color</span> <span data-i18 = "price-description-3-span-3">50 photos in retouch</span> <span data-i18 = "price-description-3-span-4">Readiness 1 week</span> <span data-i18 = "price-description-3-span-5">Make up, visage, hairstyle</span>
                                 </div>
@@ -197,18 +201,20 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts" id="contacts">
+            <section class="contacts change__theme" id="contacts">
                 <div class="container">
                     <div class="contacts__wrapper">
-                        <h2 class="contacts__title" data-i18 = "contact-me">Contact me</h2>
-                        <div class="contacts__input">
-                            <input type="email" placeholder="E-mail" required minlength="5" maxlength="30" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" data-i18 = "email">
-                            <input type="tel" placeholder="Phone" required minlength="6" maxlength="14" name="phone" data-i18 = "phone">
-                            <textarea name="comment" cols="30" rows="10" placeholder="Message" data-i18 = "message"></textarea>
-                        </div>
-                        <div class="contacts__button">
-                            <button class="contacts__btn btn__all" data-i18 = "send-message">Send message</button>
-                        </div>
+                        <h2 class="contacts__title change__theme" data-i18 = "contact-me">Contact me</h2>
+                        <form action="" method="post">
+                            <div class="contacts__input change__theme">
+                                <input type="email" placeholder="E-mail" required minlength="5" maxlength="30" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" data-i18 = "email">
+                                <input type="tel" placeholder="Phone" required minlength="6" maxlength="14" name="phone" data-i18 = "phone">
+                                <textarea name="comment" cols="30" rows="10" placeholder="Message" data-i18 = "message"></textarea>
+                            </div>
+                            <div class="contacts__button">
+                                <button class="contacts__btn btn__all change__theme" data-i18 = "send-message">Send message</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -226,22 +232,22 @@
                         <ul class="footer__social-items">
                             <li class="footer__social-item">
                                 <a target="_blank" href="https://www.instagram.com/">
-                                    <span class="ico__inst footer__ico"></span>
+                                    <span class="ico__inst footer__ico change__theme"></span>
                                 </a>
                             </li>
                             <li class="footer__social-item">
                                 <a target="_blank" href="https://www.facebook.com/v">
-                                    <span class="ico__fb footer__ico"></span>
+                                    <span class="ico__fb footer__ico change__theme"></span>
                                 </a>
                             </li>
                             <li class="footer__social-item">
                                 <a target="_blank" href="https://twitter.com/">
-                                    <span class="ico__twt footer__ico"></span>
+                                    <span class="ico__twt footer__ico change__theme"></span>
                                 </a>
                             </li>
                             <li class="footer__social-item">
                                 <a target="_blank" href="https://www.pinterest.com/">
-                                    <span class="ico__pnt footer__ico"></span>
+                                    <span class="ico__pnt footer__ico change__theme"></span>
                                 </a>
                             </li>
                         </ul>

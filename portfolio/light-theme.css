@@ -1,0 +1,102 @@
+.body.light-theme {
+    background-color: #ffffff
+}
+
+.app__portfolio.light-theme {
+    color: #000000;
+}
+
+.header.light-theme {
+    background: url(./assets/img/sec__hero__back_light-theme.jpg) center 0 no-repeat;
+}
+
+.link_all.light-theme,
+.section__title.light-theme {
+    color: #000000;
+}
+
+.section__title.light-theme::before,
+.section__title.light-theme::after  {
+    border-bottom: 2px solid #000000;
+}
+
+.header__icon.light-theme {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(0%) contrast(100%);
+}
+
+.header__icon.light-theme:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(86%)
+    contrast(27%);
+    transition: 0.8s;
+}
+
+.languages__item a.light-theme:hover,
+.nav__link.light-theme:hover {
+    color: #ffffff;
+}
+
+.languages__item.on__lang a.light-theme{
+    color: #ffffff;
+}
+
+.btn__line.light-theme {
+    background: #000000;
+}
+
+.header__btn_switch-theme.light-theme {
+    width: 40px;
+    height: 40px;
+    background: url(./assets/svg/ico_night-theme.svg) center no-repeat;
+}
+
+.hero.light-theme {
+    background: url(./assets/img/sec__hero__back_light-theme.jpg) center -90px no-repeat;
+}
+
+.hero__btn.light-theme {
+    background-color: #ffffff;
+}
+
+.hero__btn.light-theme:hover {
+    color: #BDAE82;
+    background: #000000;
+    transition: 0.3s;
+}
+
+.portfolio__btn.light-theme {
+    border: 2px solid #BDAE82;
+    color: #000000;
+}
+
+.portfolio__btn.light-theme.active {
+    background-color: #000000;
+    color: #BDAE82;
+}
+
+.price__value.light-theme,
+.contacts__title.light-theme {
+    color: #000000;
+}
+
+.contacts.light-theme {
+    background: url(./assets/img/sec__contacts__light-theme.jpg) center 0 no-repeat;
+}
+
+.contacts__input.light-theme input,
+.contacts__input.light-theme textarea {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000000;
+}
+
+.contacts__input.light-theme input::placeholder,
+.contacts__input.light-theme textarea::placeholder {
+    color: #000000;
+}
+
+.contacts__btn.light-theme {
+    background-color: #ffffff;
+}
+
+.footer__ico.light-theme {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(0%) contrast(100%);
+}
