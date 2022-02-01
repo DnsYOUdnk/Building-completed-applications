@@ -89,7 +89,7 @@ const changeTheme = document.querySelectorAll('.change__theme'),
     })
 
 let lang = 'en',
-    theme = 'light';
+    theme = 'dark';
 
 let addValueLang = function (language) {
     lang = language;
