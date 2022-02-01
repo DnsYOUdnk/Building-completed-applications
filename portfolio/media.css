@@ -1,4 +1,12 @@
 @media screen and (max-width: 900px) {
+    .nav__item:not(:last-child) {
+        padding-right: 20px;
+    }
+
+    .header__btn_switch-theme {
+        margin-left: 20px;
+    }
+
     .skills__item-title {
         padding-top: 0;
     }
