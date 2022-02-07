@@ -2,7 +2,7 @@ let headerElemnts = document.querySelector('.header__wrapper'),
     headerBtns = document.querySelectorAll('.header__btn'),
     blockMain = document.querySelector('.main'),
     playBtn = document.querySelector('.audio__btn');
-    
+
 const audio = new Audio();
 
 let isPlayAudio = false,
@@ -10,10 +10,11 @@ let isPlayAudio = false,
 
 const playAudioBtn = function () {
     if(isPlayAudio) {
-        isPlayAudio = false
-        audio.pause()
+        isPlayAudio = false;
+        playBtn.classList.remove('active');
+        audio.pause();
     } else {
-        isPlayAudio = true
+        isPlayAudio = true;
         audioPlayer();
     }
 }
@@ -21,12 +22,13 @@ const playAudioBtn = function () {
 const audioPlayer = function () {
     audio.src = `./assets/audio/${filePath}.mp3`;
     audio.currentTime = 0;
+    playBtn.classList.add('active');
     audio.play();
 }
 
 headerElemnts.addEventListener('click', event => {
     if(event.target.classList.contains('header__btn')) {
-        headerBtns.forEach(item => item.classList.remove('active'))
+        headerBtns.forEach(item => item.classList.remove('active'));
         event.target.classList.add('active');
         isPlayAudio = true;
         filePath = event.target.id;
