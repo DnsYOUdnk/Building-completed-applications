@@ -30,7 +30,6 @@ body {
     flex-direction: column;
     height: 100%;
     font-size: 24px;
-    font-weight: bold;
     font-family: 'Pacifico', cursive;
 }
 
@@ -77,6 +76,7 @@ body {
     line-height: 60px;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: 0.8s;
 }
 
 .nav__item:hover {
@@ -130,6 +130,7 @@ body {
 
 .footer__author-copy a {
     color: #fff;
+    font-weight: bold;
     letter-spacing: 2px;
     text-decoration: none;
     transition: 0.6s;
