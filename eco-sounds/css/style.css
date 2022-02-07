@@ -8,6 +8,17 @@ body {
     height: 100%;
 }
 
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width:  90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .app__eco-sounds {
     display: flex;
     flex-direction: column;
@@ -19,11 +30,41 @@ body {
     flex: 0 0 auto;
 }
 
+.header__logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/svg/logo1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(
+        7deg
+        ) brightness(92%) contrast(87%);
+    transition: 0.5s;
+}
+
+.header__logo:hover {
+    filter: none;
+}
+
 .main {
     flex: 1 0 auto;
+    background-image: url(../assets/img/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer {
     height: 60px;
     flex: 0 0 auto;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__school-link img {
+    width: 86px;
+    height: 32px;
 }
