@@ -52,8 +52,9 @@ body {
 }
 
 .main__img {
-    border-radius: 30px;
+    border-radius: 50%;
     width: 400px;
+    transition: 1s;
 }
 
 .random-jokes__btn {
@@ -75,8 +76,8 @@ body {
     filter: brightness(60%);
 }
 
-.main__img:hover {
-    transform: rotate(720deg);
+.main__img.active {
+    transform: rotate(1080deg);
     transition: 1s;
 }
 
