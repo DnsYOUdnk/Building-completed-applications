@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #b1cbbb;
+    color: #000000;
+}
+
+.container {
+    width:  90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.app__random-jokes {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 24px;
+    font-family: cursive;
+}
+
+.header {
+    flex: 0 0 auto;
+    margin-top: 10px;
+}
+
+.header__wrapper {
+    text-align: center;
+}
+
+.main {
+    flex: 1 0 auto;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.main__img {
+    border-radius: 30px;
+    width: 400px;
+}
+
+.random-jokes__btn {
+    display: block;
+    width: 50%;
+    height: 60px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.342);
+    backdrop-filter: blur(2px);
+    border: 3px solid #000;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.random-jokes__btn:hover {
+    filter: brightness(60%);
+}
+
+.main__img:hover {
+    transform: rotate(720deg);
+    transition: 1s;
+}
+
+.main__view-jokes {
+    margin-top: 50px;
+    height: 200px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.footer {
+    flex: 0 0 auto;
+    font-family: cursive;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__author-copy span {
+    padding: 0 20px;
+}
+
+.footer__author-copy a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.footer__author-copy a:hover {
+    color: #ffffff;
+}
+
+.footer__school-logo {
+    width: 135px;
+    height: 50px;
+    transition: 0.6s;
+    filter: brightness(0%);
+    padding: 10px 0;
+}
+
+.footer__school-logo:hover {
+    filter: brightness(100%);
+}
