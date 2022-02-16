@@ -45,25 +45,22 @@ body {
     margin-top: 10px;
 }
 
-.header__lang .header__lang-ru,
-.header__lang .header__lang-en {
+.header__lang .header__lang__item {
     padding: 5px 10px;
     border: 2px solid transparent;
     cursor: pointer;
 }
 
-.header__lang .header__lang-ru {
-    margin-right: 10px;
+.header__lang .header__lang__item:not(:last-child) {
+    margin-right: 34px;
 }
 
-.header__lang .header__lang-ru.active,
-.header__lang .header__lang-en.active {
+.header__lang .header__lang__item.active {
     border: 2px solid #000;
     background-color: #ffffff93;
 }
 
-.header__lang .header__lang-ru:hover,
-.header__lang .header__lang-en:hover {
+.header__lang .header__lang__item:hover {
     border: 2px solid #000;
     background-color: #ffffff93;
 }
