@@ -4,6 +4,7 @@ const randomText = document.querySelector('.random__text');
 const langBtns = document.querySelector('.header__lang');
 const langEnBtn = document.querySelector('.header__lang-en');
 const headTitle = document.querySelector('h1');
+const langButtons = document.querySelectorAll('.header__lang__item')
 
 
 let randomNum = function(min, max) {
@@ -19,13 +20,18 @@ const audioPlayer = function () {
 }
 
 const changeLang = function (id) {
-    if (id == 'langRu') {
-        headTitle.innerText = 'Случайные цитаты';
-        mainBtn.innerText = 'Нажми и вращай'
-    } else if (id == 'langEn') {
-        headTitle.innerText = 'Random quotes';
-        mainBtn.innerText = 'Tap and spin';
-    }
+    langButtons.forEach(item => {
+        item.classList.remove('active')
+            if (id == 'langRu' && item.id == 'langRu') {
+                item.classList.add('active')
+                headTitle.innerText = 'Случайные цитаты';
+                mainBtn.innerText = 'Нажми и вращай';
+            } else if (id == 'langEn' && item.id == 'langEn') {
+                item.classList.add('active')
+                headTitle.innerText = 'Random quotes';
+                mainBtn.innerText = 'Tap and spin';
+            }
+    })
 }
 
 const dataEng = 'https://type.fit/api/quotes';
@@ -40,14 +46,7 @@ async function getData(id) {
 }
 
 langBtns.addEventListener('click', (event) => {
-    let arr = event.path[1].children;
-    for (let i = 0; i < arr.length; i++) {
-        if(arr[i].classList.contains('active')){
-            arr[i].classList.remove('active')
-        }
-    }
     localStorage.setItem('lang',event.target.id);
-    event.target.classList.add('active');
     changeLang(event.target.id);
     getData(event.target.id);
 })
@@ -67,5 +66,3 @@ window.addEventListener('load', () => {
     getData(langOpt);
     changeLang(langOpt)
 })
-
-
