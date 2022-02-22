@@ -46,6 +46,46 @@ body {
 
 .main__wrapper {
     text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__area {
+    width: 450px;
+    height: 450px;
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area__cell {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area__cell:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+    cursor: pointer;
+}
+
+.area__cell:nth-child(1n+1) {
+    border-left: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.area__cell:nth-child(3n+1) {
+    border-left: transparent;
+}
+
+.area__cell:nth-child(n+7) {
+    border-bottom: transparent;
 }
 
 .footer {
