@@ -4,12 +4,12 @@ const restartBtn = document.querySelector('.pop_up__close__btn');
 const popUpContent = document.querySelector('.pop_up__content');
 const popUpwrapper = document.querySelector('#pop__up');
 const winConfetti = document.querySelector('.confetti');
+
 let editMove = 0;
 let winner = '';
 
-
 areaGame.addEventListener('mousedown', (event) => {
-    if(event.target.className == 'area__cell') {
+    if(event.target.className == 'area__cell' && event.target.innerText) {
         editMove%2 == 0 ? event.target.innerText = 'X' : event.target.innerText = '0';
         event.target.classList.add('lock');
         event.target.removeAttribute("style"); 
@@ -17,21 +17,22 @@ areaGame.addEventListener('mousedown', (event) => {
     }
     victoryCheck();
 })
+
 areaGame.addEventListener('mouseover', (event) => {
-    if(event.target.className != 'area__cell lock' && !event.target.innerText) {
+    if(event.target.className == 'area__cell' && !event.target.innerText) {
         editMove%2 == 0 ? event.target.innerText = 'X' : event.target.innerText = '0';
         event.target.style.color = 'rgba(0, 0, 0, 0.37)'; 
     }
 })
 
 areaGame.addEventListener('mouseout', (event) => {
-    if(event.target.className != 'area__cell lock' && event.target.innerText) {
+    if(event.target.className == 'area__cell' && event.target.innerText) {
         editMove%2 == 0 ? event.target.innerText = '' : event.target.innerText = ''; 
+        event.target.removeAttribute("style"); 
     }
 })
 
 const victoryCheck = function() {
-
     const arrResult = [
         [0,1,2],
         [3,4,5],
@@ -53,17 +54,16 @@ const victoryCheck = function() {
         }
     })
 
-    if(editMove == 9) {
-        winner = !winner ? 'ничья' : winner;
-        getResult(winner, item)
-    }
-
     if(!winner && editMove == 9) {
-        winner = 'ничья'
+        winner = 'случай под названием "ничья"';
+        getResult(winner)
     }
 }
 
 const getResult = function(winner, arr) {
+    arr.forEach((item) => {
+        areaCells[item].classList.add('active')
+    })
     popUpwrapper.classList.add('active');
     winConfetti.classList.add('active');
     
@@ -79,6 +79,7 @@ restartBtn.addEventListener('click', () => {
     winner = '';
     areaCells.forEach(item => {
         item.innerText = '';
-        item.classList.remove('lock') 
+        item.classList.remove('lock'); 
+        item.classList.remove('active'); 
     })
 })
