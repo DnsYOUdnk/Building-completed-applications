@@ -69,12 +69,39 @@
                         <h3>Настройка игры</h3>
                         <div class="setting__content">
                             <div class="setting__add__name">
-                                <input type="text">
-                                <input type="text">
+                                <p>Введите имена игроков:</p>
+                                <div class="name__player-item">
+                                    <label for="player__one">Имя игрока 1, "крестики"</label><input type="text" class="setting__input" id="player__one" value="Игрок X" placeholder="Имя игрока">
+                                </div>
+                                <div class="name__player-item">
+                                    <label for="player__two">Имя игрока 2, "нолики"</label><input type="text" class="setting__input" id="player__two" value="Игрок 0" placeholder="Имя игрока">
+                                </div>
                             </div>
-                            <div class="setting__change"></div>
+                            <div class="setting__change">
+                                <p>Звук:</p>
+                                <div class="change__audio">
+                                    <div class="audio__item">
+                                        <p>Аудиоэффекты:</p>
+                                        <div class="audio__item__input">
+                                            <label for="audio__on">Включить</label><input type="radio" name="audio__interface" class="setting__audio_input"  checked id="audio__on" value="on">
+                                        </div>
+                                        <div class="audio__item__input">
+                                            <label for="audio__off">Выключить</label><input type="radio" name="audio__interface"  class="setting__audio_input" id="audio__off" value="off">
+                                        </div>
+                                    </div>
+                                    <div class="audio__item change__audio__music">
+                                        <p>Фоновая музыку:</p>
+                                        <div class="audio__item__input">
+                                            <label for="music__on">Включить</label><input type="radio" name="audio__background"  class="setting__audio_input" id="music__on" value="on">
+                                        </div>
+                                        <div class="audio__item__input">
+                                            <label for="music__off">Выключить</label><input type="radio" name="audio__background"  class="setting__audio_input" id="music__off"  checked value="off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="setting__clear">
-                                <button class="setting__reset">Сбросить настройки</button>
+                                <button class="setting__reset menu__btn">Сбросить настройки</button>
                             </div>
                         </div>
                         <button class="setting__close__btn menu__btn" id="menu__setting__close">Закрыть</button>

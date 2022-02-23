@@ -288,6 +288,95 @@ body {
     margin: 10px 0;
 }
 
+.setting__add__name,
+.setting__change {
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.setting__add__name p,
+.setting__change p {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.name__player-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+}
+
+.name__player-item input {
+    padding: 5px;
+    flex-basis: 50%;
+    border: transparent;
+    border-radius: 5px;
+    font-family: cursive;
+    font-size: 18px;
+    background-color: #ffffffad;
+    text-align: center;
+}
+
+.setting__add__name label,
+.audio__item label {
+    cursor: pointer;
+}
+
+.setting__add__name label:hover,
+.audio__item label:hover {
+    color: #ffffffb9;
+}
+
+.change__audio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.change__audio p {
+    font-size: 20px;
+}
+
+.audio__item {
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.audio__item__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.audio__item label {
+    margin-right:20px;
+}
+
+.audio__item input {
+    width: 20px;
+    height: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.setting__reset {
+    max-width: 600px;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.setting__reset:hover {
+    background-color: #7a01309f;
+    color: #fff;
+}
+
 .footer {
     flex: 0 0 auto;
     font-family: cursive;
