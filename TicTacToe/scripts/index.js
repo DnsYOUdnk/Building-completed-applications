@@ -13,6 +13,7 @@ const getAudioInterfaceSwitchOn = document.querySelector('#audio__on');
 const getAudioInterfaceSwitchOff = document.querySelector('#audio__off');
 const getMusicSwitchOn = document.querySelector('#music__on');
 const getMusicSwitchOff = document.querySelector('#music__off');
+const currentPlayer = document.querySelector('.current__player')
 
 let editMove = 0;
 let winner = '';
@@ -59,7 +60,8 @@ areaGame.addEventListener('mousedown', (event) => {
 areaGame.addEventListener('mouseover', (event) => {
     if(event.target.className == 'area__cell' && !event.target.innerText) {
         editMove%2 == 0 ? event.target.innerText = 'X' : event.target.innerText = '0';
-        event.target.style.color = 'rgba(0, 0, 0, 0.37)'; 
+        event.target.style.color = 'rgba(0, 0, 0, 0.37)';
+        currentPlayer.innerText = `Ход за ${editMove%2 == 0 ? getNamePlayerOne.value : getNamePlayerTwo.value}` 
     }
 })
 
@@ -118,6 +120,7 @@ const getResult = function(winner, arr) {
     popUpContent.innerHTML = `<h3>В этой игре победил:</h3>
                                     <p>${winner}</p>
                             <p>Количество ходов в игре: ${editMove} </p>`;
+    currentPlayer.innerText = '';
     localStorage.setItem('resultStatic', JSON.stringify(staticArr));
     recNewData(staticArr);
 }
@@ -174,6 +177,7 @@ resetSettingBtn.addEventListener('click', () => {
     editMove = 0;
     winner = '';
     staticArr = [];
+    currentPlayer.innerText = '';
     getNamePlayerOne.value = 'Игрок X';
     getNamePlayerTwo.value = 'Игрок 0';
     getAudioInterfaceSwitchOn.checked = true;
