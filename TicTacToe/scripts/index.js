@@ -6,6 +6,13 @@ const windowPopUp = document.querySelector('#pop__up');
 const winConfetti = document.querySelector('.confetti');
 const getStaticBtn = document.querySelector('.header__table-btn');
 const getSettingBtn = document.querySelector('.header__setting-btn');
+const resetSettingBtn = document.querySelector('.setting__reset');
+const getNamePlayerOne = document.querySelector('#player__one');
+const getNamePlayerTwo = document.querySelector('#player__two');
+const getAudioInterfaceSwitchOn = document.querySelector('#audio__on');
+const getAudioInterfaceSwitchOff = document.querySelector('#audio__off');
+const getMusicSwitchOn = document.querySelector('#music__on');
+const getMusicSwitchOff = document.querySelector('#music__off');
 
 let editMove = 0;
 let winner = '';
@@ -17,13 +24,23 @@ let audioMusic = new Audio();
 let playNowAudio = function(trackAudio) {
     audio.src = `./assets/audio/${trackAudio}.mp3`;
     audio.currentTime = 0;
-    audio.play();
+    audio.volume = 0.6;
+    if(getAudioInterfaceSwitchOn.checked) {
+        audio.play();
+    } else if(getAudioInterfaceSwitchOff.checked) {
+        audio.pause();
+    }
 }
 
-let playAudioMusic = function(trackAudio) {
-    audioMusic.src = `./assets/audio/${trackAudio}.mp3`;
+let playBackMusic = function() {
+    audioMusic.src = `./assets/audio/audioTrack.mp3`;
     audioMusic.currentTime = 0;
-    audioMusic.play();
+    if(getMusicSwitchOn.checked) {
+        audioMusic.play();
+        audio.volume = 0.2;
+    } else if(getMusicSwitchOff.checked) {
+        audioMusic.pause();
+    }
 }
 
 areaGame.addEventListener('mousedown', (event) => {
@@ -31,6 +48,8 @@ areaGame.addEventListener('mousedown', (event) => {
         editMove%2 == 0 ? event.target.innerText = 'X' : event.target.innerText = '0';
         event.target.classList.add('lock');
         event.target.removeAttribute("style"); 
+        localStorage.setItem('namePlayer1', getNamePlayerOne.value);
+        localStorage.setItem('namePlayer2', getNamePlayerTwo.value);
         editMove++;
     }
     playNowAudio('addX0');
@@ -65,11 +84,11 @@ const victoryCheck = function() {
 
     arrResult.forEach(item => {
         if(areaCells[item[0]].innerText == 'X' && areaCells[item[1]].innerText == 'X' && areaCells[item[2]].innerText == 'X') {
-            winner = 'Игрок X';
+            winner = `${getNamePlayerOne.value}`;
             staticArr.push(winner)
             getResult(winner, item)
         } else if(areaCells[item[0]].innerText == '0' && areaCells[item[1]].innerText == '0' && areaCells[item[2]].innerText == '0') {
-            winner = 'Игрок 0';
+            winner = `${getNamePlayerTwo.value}`;
             staticArr.push(winner)
             getResult(winner, item)
         }
@@ -101,10 +120,10 @@ const getResult = function(winner, arr) {
                             <p>Количество ходов в игре: ${editMove} </p>`;
     localStorage.setItem('resultStatic', JSON.stringify(staticArr));
     recNewData(staticArr);
-    audioMusic.pause();
 }
 
 const recNewData = function(dataArr) {
+    if(!dataArr) return
     if(staticArr.length > 10) staticArr.shift();
     const staticList = document.querySelector('.menu__table__content');
     let list = '';
@@ -121,10 +140,7 @@ const recNewData = function(dataArr) {
     staticList.innerHTML = list;
 }
 
-
-restartBtn.addEventListener('click', () => {
-    windowPopUp.classList.remove('active__on__pop');
-    winConfetti.classList.remove('active');
+const restWindowGame = function() {
     editMove = 0;
     winner = '';
     areaCells.forEach(item => {
@@ -133,8 +149,14 @@ restartBtn.addEventListener('click', () => {
         item.classList.remove('active'); 
         item.removeAttribute("style"); 
     })
+}
+
+
+restartBtn.addEventListener('click', () => {
+    windowPopUp.classList.remove('active__on__pop');
+    winConfetti.classList.remove('active');
+    restWindowGame()
     playNowAudio('addButton');
-    playAudioMusic('audioTrack');
 })
 
 getStaticBtn.addEventListener('click', () => {
@@ -147,6 +169,20 @@ getSettingBtn.addEventListener('click', () => {
     playNowAudio('addButton');
 })
 
+resetSettingBtn.addEventListener('click', () => {
+    localStorage.clear()
+    editMove = 0;
+    winner = '';
+    staticArr = [];
+    getNamePlayerOne.value = 'Игрок X';
+    getNamePlayerTwo.value = 'Игрок 0';
+    getAudioInterfaceSwitchOn.checked = true;
+    getMusicSwitchOff.checked = true;
+    playBackMusic()
+    recNewData(staticArr);
+    restWindowGame()
+})
+
 windowPopUp.addEventListener('click', (event) => {
     if(event.target.id == 'menu__table__close' || event.target.id == 'popUp_wrap' || event.target.id == 'menu__setting__close') {
         windowPopUp.classList.remove('active__on__table','active__on__setting');
@@ -154,8 +190,18 @@ windowPopUp.addEventListener('click', (event) => {
     }
 })
 
+getMusicSwitchOn.addEventListener('click', () => {
+    playBackMusic();
+})
+
+getMusicSwitchOff.addEventListener('click', () => {
+    playBackMusic();
+})
+
 window.addEventListener('load', () => {
     if(!localStorage.getItem('resultStatic')) return
     staticArr = JSON.parse(localStorage.getItem('resultStatic'));
+    getNamePlayerOne.value = localStorage.getItem('namePlayer1');
+    getNamePlayerTwo.value = localStorage.getItem('namePlayer2');
     recNewData(staticArr);
 })
