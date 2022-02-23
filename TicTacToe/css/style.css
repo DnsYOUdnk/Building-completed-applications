@@ -155,14 +155,11 @@ body {
     bottom: 0;
     left:0; 
     display: none;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .main__pop_up.active__on__pop,
-.main__pop_up.active__on__table {
+.main__pop_up.active__on__table,
+.main__pop_up.active__on__setting {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,12 +179,15 @@ body {
 }
 
 .main__pop_up.active__on__pop .pop_up__view,
-.main__pop_up.active__on__table .menu__table__view {
+.main__pop_up.active__on__table .menu__table__view,
+.main__pop_up.active__on__setting .setting__view {
     display: flex;
 }
 
+
+.pop_up__view,
 .menu__table__view,
-.pop_up__view {
+.setting__view {
     z-index: 2;
     width: 350px;
     height: 350px;
@@ -219,20 +219,28 @@ body {
 
 .pop_up__close__btn:hover {
     background-color: #17d4ff8f;
-    transform: scale(120%);
+    transform: scale(1.2);
 }
 
-.menu__table__view {
+.menu__table__view,
+.setting__view {
     width: 550px;
     height: 650px;
 }
 
-.menu__table__view h3 {
+.setting__view {
+    width: 750px;
+    height: 650px;
+}
+
+.menu__table__view h3, 
+.setting__view h3 {
     padding: 10px;
     flex: 0 0 auto;
 }
 
-.menu__table__content {
+.menu__table__content,
+.setting__content {
     flex: 1 0 auto;
     width: 90%;
     display: flex;
@@ -274,7 +282,8 @@ body {
     width: 154px;
 }
 
-.menu__table__close__btn {
+.menu__table__close__btn,
+.setting__close__btn {
     flex: 0 0 auto;
     margin: 10px 0;
 }
