@@ -1,4 +1,4 @@
 # dnsyoudnk-JSFEPRESCHOOL
-https://rolling-scopes-school.github.io/dnsyoudnk-JSFEPRESCHOOL/portfolio/
+https://dnsyoudnk.github.io/HTML-CSS-JS/portfolio/
 ***
 Private repository for @dnsyoudnk
