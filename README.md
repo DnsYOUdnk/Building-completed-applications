@@ -1,10 +1,10 @@
 # dnsyoudnk-JSFEPRESCHOOL
-https://rolling-scopes-school.github.io/dnsyoudnk-JSFEPRESCHOOL/portfolio/
+https://dnsyoudnk.github.io/HTML-CSS-JS/portfolio/
 ***
-https://rolling-scopes-school.github.io/dnsyoudnk-JSFEPRESCHOOL/eco-sounds/
+https://dnsyoudnk.github.io/HTML-CSS-JS/eco-sounds/
 ***
-https://rolling-scopes-school.github.io/dnsyoudnk-JSFEPRESCHOOL/random-jokes/
+https://dnsyoudnk.github.io/HTML-CSS-JS/random-jokes/
 ***
-https://rolling-scopes-school.github.io/dnsyoudnk-JSFEPRESCHOOL/TicTacToe/
+https://dnsyoudnk.github.io/HTML-CSS-JS/TicTacToe/
 ***
 Private repository for @dnsyoudnk
